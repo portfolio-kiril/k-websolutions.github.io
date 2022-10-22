@@ -5,79 +5,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
-
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:ital,wght@1,500&display=swap"
-        rel="stylesheet" />
-
-    <link id="theme-style" rel="stylesheet" type="text/css" href="" />
-
-    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>My Portfolio</title>
 </head>
 
 <body>
-    <section class="main-container">
-        <div class="s1">
-            <div class="header-name">
-                <h1>Hi I'm Kiril Zyapkov</h1>
+    <div class="nav__toggle" id="nav-toggle">
+        <i class="uil uil-bars"></i>
+    </div>
+    <aside class="sidebar" id="sidebar">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="index.html" class="nav__logo-text">M</a>
             </div>
-            <div class="header-container">
-                <div class="header-head">
-                    <div class="header-dots">
-                        <div id="dot-1" class="dots"></div>
-                        <div id="dot-2" class="dots"></div>
-                        <div id="dot-3" class="dots"></div>
-                    </div>
-
-                    <a target="_blank" href='assets/CV.pdf' class="header-contact">Download my CV</a>
+            <div class="nav__menu">
+                <div class="menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">Skillls</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link">Work</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">Services</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
 
                 </div>
-                <div class="header-information">
-                    <div class="header-information-section-one">
-                        <img class="header-information-logo" src="assets/logo.jpg" alt="logo" />
-                        <p>Personalize Theme</p>
-                        <div class="color-theme-dots-container">
-                            <div id="light" class="color-theme-dots"></div>
-                            <div id="blue" class="color-theme-dots"></div>
-                            <div id="green" class="color-theme-dots"></div>
-                            <div id="purple" class="color-theme-dots"></div>
-                        </div>
+            </div>
+            <div class="btn__share">
+                <!-- <i class="uil uil-share-alt social__share"></i> -->
+                <a target="_blank" href='assets/CV.pdf' class="header-contact"><i
+                        class="uil uil-file-download-alt cv"></i></a>
+                <span class="tooltiptext">Download CV</span>
+            </div>
 
+            <div class="nav__close" id="nav-close">
+                <i class="uil uil-times"></i>
+            </div>
+        </nav>
+    </aside>
+    <main class="main">
+        <section class="home" id="home">
+            <div class="home__container container grid">
+
+                <div class="home__social">
+                    <span class="home__social-follow">Follow Me</span>
+                    <div class="home__social-links">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link"><i
+                                class="uil uil-facebook-f"></i></a>
+                        <a href="https://www.github.com/" target="_blank" class="home__social-link"><i
+                                class="uil uil-github"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="home__social-link"><i
+                                class="uil uil-linkedin"></i></a>
                     </div>
-                    <div class="header-content-conainer">
+                </div>
 
-                        <div class="header-content">
-                            <div id="top-left" class="corner"></div>
-                            <div id="top-right" class="corner"></div>
-                            <h3>What I Do</h3>
-                            <p>I'm a front-end developer and I enjoy building everything from small business sites to
-                                rich
-                                web
-                                applications.</p>
-                            <div id="bottom-right" class="corner"></div>
-                            <div id="bottom-left" class="corner"></div>
+                <img src="assets/Kiril3.png" alt="" class="home__img" />
 
+                <div class="home__data">
+                    <h1 class="home_title">Hi, I my name is Kiril</h1>
+                    <h3 class="home__subtitle">Frontend developer</h3>
+                    <p class="home__description">I'm a front-end developer and I enjoy building everything from small
+                        business sites to
+                        rich
+                        web
+                        applications.</p>
+                    <a href="#about" class="button"><i class="uil uil-user button__icon"></i>More About Me</a>
+                </div>
+
+                <div class="my__info">
+                    <div class="info__item">
+                        <i class="uil uil-facebook-messenger info__icon"></i>
+
+                        <div>
+                            <h3 class="info__title">Messenger</h3>
+                            <span class="info__subtitle">Kiril Zyapkov</span>
+                        </div>
+                    </div>
+
+                    <div class="info__item">
+                        <i class="uil uil-whatsapp info__icon"></i>
+
+                        <div>
+                            <h3 class="info__title">Viber</h3>
+                            <span class="info__subtitle">0885988744</span>
+                        </div>
+                    </div>
+
+                    <div class="info__item">
+                        <i class="uil uil-envelope info__icon"></i>
+
+                        <div>
+                            <h3 class="info__title">Email</h3>
+                            <span class="info__subtitle">appdeveloperjs47@gmail.com</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="section-two">
-        <div class="s2">
-            <article>
-                <div class="about-me-wraper">
-                    <div class="about-me-container">
-                        <h2>More about me</h2>
 
-                    </div>
-                    <p class="about-me-p">
+        </section>
+
+        <section class="about section" id="about">
+            <h2 data-heading="My Intro" class="section__title"> About Me </h2>
+            <div class="about__container container grid">
+                <img src="assets/Kiril3.png" alt="" class="about__img" />
+                <div class="about__data">
+                    <h3 class="about__heading">Hi, I'm Kiril Zyapkov</h3>
+                    <p class="about__description">
                         If you love your business as much as I love my job, we’re off to a good start! With YOUR VISION
                         and
                         my experience, we can create something that engages your audience. I design beautiful, effective
@@ -85,113 +132,594 @@
                         deadlines are kept and budgets are respected. I’m passionate about simplicity, building
                         user-friendly websites, achieved through good design.
                     </p>
-                    <div class="line"></div>
-                </div>
-                <div class="expertise-container">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class="uil uil-award about__icon"></i>
+                            <h3 class="about__title">Experience</h3>
+                            <span class="about__subtitle">1 + Years</span>
+                        </div>
 
-                    <h2>TOP EXPERTISE</h2>
-                    <p>Fullstack developer with primary focus on React.</p>
-                </div>
-                <div class="list">
+                        <div class="about__box">
+                            <i class="uil uil-suitcase-alt about__icon"></i>
+                            <h3 class="about__title">Completed</h3>
+                            <span class="about__subtitle">5 Projects</span>
+                        </div>
 
-                    <div class="list-containers">
-
-                        <div>React</div>
-                        <div>JavaScript</div>
-                        <div>Node JS</div>
-                        <div>Express</div>
                     </div>
-                    <div class="list-containers">
-
-                        <div>Mongodb</div>
-                        <div>Mongoose</div>
-                        <div>Google Maps API</div>
-                        <div>Back4App</div>
-                    </div>
-                    <div class="list-containers">
-
-                        <div>EmailJS</div>
-                        <div>Netlify</div>
-                        <div>Tailwind CSS</div>
-                        <div>HTML/CSS</div>
-                    </div>
-
+                    <a href="#contact" class="button"><i class="uil uil-navigator button__icon"></i>Contact Me</a>
                 </div>
-            </article>
+            </div>
+        </section>
 
+        <section class="qualification section">
+            <h2 data-heading="My Journey" class="section__title">Qualification</h2>
+
+            <div class="qualification__container container grid">
+                <div class="education">
+                    <h3 class="qualification__title"> <i class="uil uil-graduation-cap"></i>Education</h3>
+
+                    <div class="timeline">
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__itle">Sveto Pokrovsko</h3>
+                            <p class="timeline__text">Nature math class with intensive study of English</p>
+                            <span class="timeline__date"><i class="uil uil-schedule"></i>
+                                1999 - 2009
+                            </span>
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__itle">Technical University of Sofia</h3>
+                            <p class="timeline__text">Тechnologies and Тransport Мanagement</p>
+                            <span class="timeline__date"><i class="uil uil-schedule"></i>
+                                2009 - 2016
+                            </span>
+                        </div>
+
+                        <div class="timeline__item">
+                            <div class="circle__dot"></div>
+                            <h3 class="timeline__itle">SoftUni Sofia</h3>
+                            <p class="timeline__text">Full stack developer with javascript</p>
+                            <span class="timeline__date"><i class="uil uil-schedule"></i>
+                                2020 - 2022
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 data-heading="My Journey" class="section__title">My Experience</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__tabs">
+                    <div class="skills__header skills__active" data-target="#frontend">
+                        <i class="iul uil-brackets-curly skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">Frontend developer</h1>
+                            <span class="skills__subtitle">More than 1 year</span>
+
+                        </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__header" data-target="#backend">
+                        <i class="uil uil-server skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">Backend Development</h1>
+                            <span class="skills__subtitle">More than 1 year</span>
+
+                        </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <div class="skills__group skills__active" data-content id="frontend">
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentages" style="width: 80%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentages" style="width: 50%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentages" style="width: 75%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentages" style="width: 60%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Angular</h3>
+                                    <span class="skills__number">20%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentages" style="width: 20%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Tailwind CSS</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentages" style="width: 70%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__group" data-content id="backend">
+                        <div class="skills__list grid">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Back4App</h3>
+                                    <span class="skills__number">60%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentages" style="width: 60%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Firebase</h3>
+                                    <span class="skills__number">40%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentages" style="width: 40%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Heroku</h3>
+                                    <span class="skills__number">30%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentages" style="width: 30%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">EmailJS</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentages" style="width: 50%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">NodeJS</h3>
+                                    <span class="skills__number">50%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentages" style="width: 50%;"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">MongoDB</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+
+                                <div class="skills__bar">
+                                    <span class="skills__percentages" style="width: 75%"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="work section" id="work">
+            <h2 data-heading="My Portfolio" class="section__title">Recent Works</h2>
+
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".web">Web</span>
+                <span class="work__item" data-filter=".app">App</span>
+            </div>
+            <div class="work__container container grid">
+                <div class="work__card mix web">
+                    <img src="assets/car-forum.png" alt="" class="work__img" />
+                    <h3 class="work__title">Forum</h3>
+                    <a class="work__site" href="https://cars-forum.netlify.app"></a>
+                    <span class="work__button">Demo
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Forum</h3>
+                        <p class="details__description">A web site for finding everithing for cars or publish your own
+                            article. Joining diferent forums or create your own one.</p>
+                        <ul class="details__info">
+                            <li>Technologies - <span>Reacr, Back4App, CSS</span></li>
+                            <li>Role - <span>frontend / backend</span></li>
+                            <li>Code - <span><a href="https://github.com/KirilSZyapkov/blog-cars">Git Hub</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix app">
+                    <img src="assets/chatApp.jpg" alt="" class="work__img" />
+                    <h3 class="work__title">Chat App</h3>
+                    <a class="work__site" href="https://chat-app-uni.netlify.app"></a>
+                    <span class="work__button">Demo
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Chat App</h3>
+                        <p class="details__description">A chat app that allows to communicate with your friends.</p>
+                        <ul class="details__info">
+                            <li>Technologies - <span>Reacr, Chat Engine, CSS</span></li>
+                            <li>Role - <span>frontend / backend</span></li>
+                            <li>Code - <span><a href="https://github.com/KirilSZyapkov/chat-app">Git Hub</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="assets/myStorage.png" alt="" class="work__img" />
+                    <h3 class="work__title">My Storage</h3>
+                    <a class="work__site" href="https://eclectic-florentine-d06631.netlify.app"></a>
+                    <span class="work__button">Demo
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">My Storage</h3>
+                        <p class="details__description">A Goole Disk clone app using Firebase Authentication, Firebase
+                            storage and Database. You can create an accound and store your files and creating new
+                            folders.</p>
+                        <ul class="details__info">
+                            <li>Technologies - <span>Reacr, Firebase Storage, Firebase Auth, Firebase Database, Tailwind
+                                    CSS</span></li>
+                            <li>Role - <span>frontend</span></li>
+                            <li>Code - <span><a href="https://github.com/KirilSZyapkov/my-storage">Git Hub</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="work__card mix web">
+                    <img src="assets/picture_me.png" alt="" class="work__img" />
+                    <h3 class="work__title">Picture Me</h3>
+                    <a class="work__site" href="https://picture-me-react-project.netlify.app"></a>
+                    <span class="work__button">Demo
+                        <i class="uil uil-arrow-right work__button-icon"></i>
+                    </span>
+
+                    <div class="portfolio__item-details">
+                        <h3 class="details__title">Picture Me</h3>
+                        <p class="details__description">Social Media App using the following features, such as Google
+                            Authentication, create, edit, delete and save posts, like and comment on other people's
+                            posts, search and filter images.</p>
+                        <ul class="details__info">
+                            <li>Technologies - <span>Reacr, Back4App, Firebase Auth</span></li>
+                            <li>Role - <span>frontend / backend</span></li>
+                            <li>Code - <span><a href="https://github.com/KirilSZyapkov/picture_me">Git Hub</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="portfolio__popup">
+            <div class="portfolio__popup-inner">
+                <div class="portfolio__popup-content grid">
+                    <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+                    <div class="pp__thumbnail">
+                        <a href="#" target="_blank"><img src="assets/picture_me.png" alt=""
+                                class="portfolio__popup-img"></a>
+                    </div>
+                    <div class="portfolio__popup-info">
+                        <div class="portfolio__popup-subtitle">Feature - <span>Design</span></div>
+                        <div class="portfolio__popup-body">
+                            <h3 class="details__title">Picture Me</h3>
+                            <p class="details__description">Social Media App using the following features, such as
+                                Google
+                                Authentication, create, edit, delete and save posts, like and comment on other people's
+                                posts, search and filter images.</p>
+                            <ul class="details__info">
+                                <li>Technologies - <span>Reacr, Back4App, Firebase Auth</span></li>
+                                <li>Role - <span>frontend / backend</span></li>
+                                <li>Code - <span><a href="https://github.com/KirilSZyapkov/picture_me">Git
+                                            Hub</a></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <section class="services section" id="services">
+            <h2 data-heading="Services" class="section__title">What i Offer</h2>
+
+            <div class="services__container container grid">
+                <div class="services__content">
+                    <div>
+                        <i class="iul uil-brackets-curly skills__icon"></i>
+                        <h3 class="services__title">Web <br> Frontend</h3>
+                    </div>
+
+                    <span class="services__button">
+                        View More <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times servicies__modal-close"></i>
+
+                            <h3 class="services__modal-title">Web App</h3>
+                            <p class="services__modal-description">
+                                Providing quality work to clients and companies. I create Internet sites and web
+                                applications based on Internet technologies such as HTML, CSS, JavaScript,
+                            </p>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Development of dynamic web pages</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Creation and maintenance of web pages</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Development and maintenance of applications based on
+                                        web technologies</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Providing convenient navigation and structured
+                                        content</p>
+                                </li>
+                                <!-- <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">SEO optimization</p>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__content">
+                    <div>
+                        <i class="uil uil-server skills__icon"></i>
+                        <h3 class="services__title">Web <br> Backend</h3>
+                    </div>
+
+                    <span class="services__button">
+                        View More <i class="uil uil-arrow-right services__button-icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="uil uil-times servicies__modal-close"></i>
+
+                            <h3 class="services__modal-title">Backend Services</h3>
+                            <p class="services__modal-description">
+                                I develop efficient and scalable back ends tailored to your business needs and that are
+                                called to solve certain issues.
+
+                                By utilizing the latest technologies, I build fault-tolerant web solutions for various
+                                enterprises that process large volumes of data. During back-end application development,
+                                I create a robust back-end from scratch, optimize and refactor an app, and
+                                add new features that extend the functionality.
+                            </p>
+                            <ul class="services__modal-services grid">
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Creating Multi Page Web App</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Database design</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Design endpoints</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Implement API</p>
+                                </li>
+                                <li class="services__modal-service">
+                                    <i class="uil uil-check-circle services__modal-icon"></i>
+                                    <p class="services__modal-info">Writing tests & Deployment</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 data-heading="Get in touch" class="section__title">Contact Me</h2>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <div class="uil uil-envelope-edit contact__card-icon"></div>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">appdeveloperjs47@gmail.com</span>
+                            <span class="contact__button">
+                                Write me <i class="uil uil-arrow-right contact__button-icon"></i>
+                            </span>
+                        </div>
+
+                        <div class="contact__card">
+                            <div class="uil uil-facebook-messenger contact__card-icon"></div>
+                            <h3 class="contact__card-title">Messenger</h3>
+                            <span class="contact__card-data">Kiril Zyapkov</span>
+                            <span class="contact__button">
+                                Write me <i class="uil uil-arrow-right contact__button-icon"></i>
+                            </span>
+                        </div>
+
+                        <div class="contact__card">
+                            <div class="uil uil-whatsapp contact__card-icon"></div>
+                            <h3 class="contact__card-title">Viber</h3>
+                            <span class="contact__card-data">0885988744</span>
+                            <span class="contact__button">
+                                Write me <i class="uil uil-arrow-right contact__button-icon"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <form class="contact__form">
+                        <div class="input__container">
+                            <input type="text" class="input" id="name" name="name" required>
+                            <label for="name">Name</label>
+                            <span>Name</span>
+                        </div>
+
+                        <div class="input__container">
+                            <input type="email" class="input" id="email" name="email" required>
+                            <label for="email">Email</label>
+                            <span>Email</span>
+                        </div>
+
+                        <div class="input__container">
+                            <input type="tel" class="input" id="phone" name="phone" required>
+                            <label for="phone">Phone</label>
+                            <span>Phone</span>
+                        </div>
+
+                        <div class="input__container textarea">
+                            <textarea name="subject" id="subject" class="input"></textarea>
+                            <label for="subject">Message</label>
+                            <span>Message</span>
+                        </div>
+                        <button type="submit" class="button" id="form-button"><i
+                                class="uil uil-navigator button__icon"></i>Send
+                            Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Kiril</h1>
+                        <span class="footer__subtitle">Full Stack Developer</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#services" class="footer__link">Services</a>
+                        </li>
+                        <li>
+                            <a href="#work" class="footer__link">Work</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social"><i
+                                class="uil uil-facebook-f"></i></a>
+                        <a href="https://www.github.com/" target="_blank" class="footer__social"><i
+                                class="uil uil-github"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank" class="footer__social"><i
+                                class="uil uil-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; Crypticalcoder. All right reserved</p>
+            </div>
+        </footer>
+
+    </main>
+    <section id="email" class="email sending">
+        <p>Email Modal Box</p>
     </section>
-    <section class="project-container-section">
-        <div class="project-container-h1">
-            <h2>Some of my projects</h2>
-        </div>
-        <div class="project-container">
-            <div class="project-card-container">
-                <img class="project-img" src="assets/car-forum.png" alt="car-forum" />
-                <h3>Car Forum</h3>
-                <div class="project-buttons-container">
-                    <a class="project-buttons" href="https://github.com/KirilSZyapkov/blog-cars"
-                        target="_blank">Github</a>
-                    <a class="project-buttons" href="https://cars-forum.netlify.app" target="_blank">Live Demo</a>
-                </div>
-            </div>
 
-            <div class="project-card-container">
-                <img class="project-img" src="assets/picture_me.png" alt="car-forum" />
-                <h3>Picture Me</h3>
-                <div class="project-buttons-container">
-                    <a class="project-buttons" href="https://github.com/KirilSZyapkov/picture_me"
-                        target="_blank">Github</a>
-                    <a class="project-buttons" href="https://picture-me-react-project.netlify.app" target="_blank">Live
-                        Demo</a>
-                </div>
-            </div>
 
-            <div class="project-card-container">
-                <img class="project-img" src="assets/rent_a_car.png" alt="car-forum" />
-                <h3>Rent a Car</h3>
-                <div class="project-buttons-container">
-                    <a class="project-buttons" href="https://github.com/KirilSZyapkov/rent-a-car"
-                        target="_blank">Github</a>
-                    <a class="project-buttons" href="https://rent-a-car-f00fa.web.app" target="_blank">Live Demo</a>
-                </div>
-            </div>
 
-        </div>
-    </section>
 
-    <section class="contact-me-section">
-        <div class="contact-me-container-h2">
-            <h2>Contact Me!</h2>
-        </div>
-        <div class="contact-me-form-container">
-            <div class="container">
-                <form>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name.." required>
 
-                    <label for="email">E-mail</label>
-                    <input type="text" id="email" name="email" placeholder="Your E-mail.." required>
 
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"
-                        required></textarea>
 
-                    <div class="form-button-container">
-                        <input id="form-button" type="submit" value="Submit">
 
-                    </div>
-                </form>
-            </div>
-        </div>
 
-    </section>
-    <script src="index.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_cHmfISm7sED5Rr2y3J6Uv");
-        })();
-    </script>
+
+
+
+
 </body>
+<script src="assets/mixitup.min.js"></script>
+<script src="index.js" type="text/javascript"></script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("user_cHmfISm7sED5Rr2y3J6Uv");
+    })();
+</script>
 
 </html>
