@@ -159,13 +159,13 @@ async function sendMail(e) {
   const mail = document.getElementById("email-modal-box");
 
   // blurred.classList.add("blur");
-
   const target = e.target;
   const parentNode = target.parentNode;
 
   try {
     if (name.value || email.value || message.value || phone.value) {
-      mail.style.display = "block";
+      mail.style.display = 'block';
+      
       const re = await emailjs.sendForm(
         "service_2b2dv69",
         "template_jrxnf6h",
